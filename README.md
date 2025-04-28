@@ -23,7 +23,7 @@ Tüm Kullanıcıların erişim sağladığı Kitap Uygulaması.
 - ** 📬Postman**
 - # Jpa-Query-Methodlar
 
- | ⚠️ | Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları  |
+ | 💼 | Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları  |
 | ------------ | ------------ |
 | 1. Kullanıcı Kaydı (User Registration)  | Açıklama: Kullanıcılar sisteme kaydolmak için gerekli bilgileri (ad, soyad, e-posta, şifre) girer. Şifreler güvenli bir şekilde saklanır (örn. bcrypt ile şifreleme).
 
@@ -39,7 +39,7 @@ E-posta adresi ve kullanıcı adı gibi bilgilerin benzersiz olması sağlanır.
 
 Kayıt başarılı olduktan sonra kullanıcıya hoş geldiniz mesajı gösterilir.  |
 
- | ⚠️ | Kullanıcı Girişi User Login  |
+ | 🔐 | Kullanıcı Girişi User Login  |
 | ------------ | ------------ |
 |2. Kullanıcı Girişi (User Login) |Açıklama: Kullanıcılar sisteme giriş yapmak için e-posta ve şifrelerini kullanır. Giriş başarılı olursa, kullanıcıya bir erişim token'ı (JWT - JSON Web Token) verilir.
 
@@ -53,7 +53,7 @@ Oturum açma süresi belirlenir (token süresi).
 
 Kullanıcı girişi başarılı olduğunda ana sayfaya yönlendirilir.|
 
-| ⚠️ |  Kullanıcı Olmayan Kişiler İçin Hata Mesajı  |
+| ❌ |  Kullanıcı Olmayan Kişiler İçin Hata Mesajı  |
 | ------------ | ------------ |
 |3.Açıklama: Sistemde kaydı olmayan bir kullanıcı giriş yapmaya çalıştığında, kullanıcıya "Hesap bulunamadı" gibi bir hata mesajı gösterilir.
 
@@ -63,7 +63,7 @@ Kayıtsız kullanıcılar için uygun hata mesajı (örneğin, "Kullanıcı bulu
 
 Sistemdeki kullanıcılar veritabanı üzerinden kontrol edilir.|
 
-| ⚠️ |  Kitap Ekleme (Add Book) |
+| ➕ |  Kitap Ekleme (Add Book) |
 | ------------ | ------------ |
 |4. Kitap Ekleme (Add Book)
 Açıklama: Sisteme yeni bir kitap eklemek isteyen kullanıcı, kitap adı, yazar, açıklama gibi bilgileri girer. Kitap, veritabanına kaydedilir.
@@ -76,7 +76,7 @@ Kitap bilgileri (ad, yazar, açıklama, kategori, vb.) zorunlu alanlar.
 
 Kitap ekleme işlemi başarılı olduğunda, kullanıcıya onay mesajı gösterilir.|
 
-| ⚠️ |Kitap Silme (Delete Book)|
+| 🗑️ |Kitap Silme (Delete Book)|
 | ------------ | ------------ |
 |5. Kitap Silme (Delete Book)
 Açıklama: Kullanıcılar sadece kendi ekledikleri kitapları silebilir. Diğer kullanıcıların kitaplarına müdahale edemezler.
@@ -89,7 +89,7 @@ Kitap silme işlemi sonrası kullanıcıya onay mesajı gösterilir.
 
 Kitap silme işlemi için uygun API endpoint'leri sağlanır.|
 
-| ⚠️ |Kitap Güncelleme (Update Book)|
+| 🔄 |Kitap Güncelleme (Update Book)|
 | ------------ | ------------ |
 |6. Kitap Güncelleme (Update Book)
 Açıklama: Kullanıcılar sadece kendi ekledikleri kitapları güncelleyebilir. Kitap adı, yazar, açıklama gibi bilgiler güncellenebilir.
@@ -102,7 +102,7 @@ Kitap bilgileri (ad, yazar, açıklama, kategori) güncellenebilir.
 
 Kitap güncellenmesi sonrası kullanıcıya onay mesajı gösterilir.|
 
-| ⚠️ |Kitap Listeleme (List Books)|
+| 📝 |Kitap Listeleme (List Books)|
 | ------------ | ------------ |
 |7. Kitap Listeleme (List Books)
 Açıklama: Sistemdeki tüm kitaplar, kullanıcılar tarafından listelenebilir.
@@ -115,7 +115,7 @@ Listeleme filtreleme ve sıralama seçenekleri (örneğin, kitap ismine göre ar
 
 Kullanıcıya her kitap için ayrıntılı bilgi sağlanabilir (yazar, açıklama, kategori, ekleyen kullanıcı vb.).
 
-| ⚠️ |Kitap Arama (Search Books)|
+| 🔎 |Kitap Arama (Search Books)|
 | ------------ | ------------ |
 |8. Kitap Arama (Search Books)
 Açıklama: Kullanıcılar, kitapları başlık, yazar veya kategori gibi filtrelerle arayabilirler.
