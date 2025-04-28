@@ -23,31 +23,101 @@ Tüm Kullanıcıların erişim sağladığı Kitap Uygulaması.
 - ** 📬Postman**
 - # Jpa-Query-Methodlar
 
-| SPRİNG | Kullanıcı Kayıt Ekranı Kayıtsız Kullanıcılarda Alınan Hata |
+ | ⚠️ | KAYITSIZ GİRİŞ HATASI  |
 | ------------ | ------------ |
-|Kullanıcıların Register alanından kayıt yaptıkları kayıtlı olmayan kullanıcıların sisteme erişim sağlayamadığı alan.|
-| Search | Kitap (Search) arama ekranı |
-| Search  | Tüm Kullanıcıların eklediğ kitaplar üzerinden aramalar gerçekleştirebileceğimiz alan.|
-| ------------ | ------------ |
-
-| Login | All Person Login Registred |
-| Login  | Kayıt olan Kullanıcıların sisteme erişim sağladığı bölüm.|
-| ------------ | ------------ |
-
-| Update  | Owner Book Update |
-| ------------ | ------------ |
-|Update | Kullanıcıların kendi eklediğkleri kitaplar üzerinden değişim gerçekleştirebildiğimiz alan.|
-
-
-| List  | Book All List |
-| ------------ | ------------ |
-|Tüm Kullanıcıların kitapların tamamını listeleyebildiği alan. |
-
-| Delete  | Book Owner Delete |
-|  Kullanıcıların sadece kendi kitaplarını silebildiği alan. |
-
-
+| HATA  | Giriş yapılmadan kitap eklenilicek olursa uygulamanın vericeği hata !  |
  
+Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları
+1. Kullanıcı Kaydı (User Registration)
+Açıklama: Kullanıcılar sisteme kaydolmak için gerekli bilgileri (ad, soyad, e-posta, şifre) girer. Şifreler güvenli bir şekilde saklanır (örn. bcrypt ile şifreleme).
 
+Gerekli Özellikler:
+
+Kullanıcı adı, e-posta, şifre gibi alanlar zorunludur.
+
+Şifreler hash'lenerek veritabanına kaydedilir.
+
+E-posta doğrulama işlemi (opsiyonel).
+
+E-posta adresi ve kullanıcı adı gibi bilgilerin benzersiz olması sağlanır.
+
+Kayıt başarılı olduktan sonra kullanıcıya hoş geldiniz mesajı gösterilir.
+
+2. Kullanıcı Girişi (User Login)
+Açıklama: Kullanıcılar sisteme giriş yapmak için e-posta ve şifrelerini kullanır. Giriş başarılı olursa, kullanıcıya bir erişim token'ı (JWT - JSON Web Token) verilir.
+
+Gerekli Özellikler:
+
+Giriş yapan kullanıcıya bir JWT token'ı verilir.
+
+Hatalı giriş denemesi durumunda kullanıcıya hata mesajı döndürülür.
+
+Oturum açma süresi belirlenir (token süresi).
+
+Kullanıcı girişi başarılı olduğunda ana sayfaya yönlendirilir.
+
+3. Kullanıcı Olmayan Kişiler İçin Hata Mesajı
+Açıklama: Sistemde kaydı olmayan bir kullanıcı giriş yapmaya çalıştığında, kullanıcıya "Hesap bulunamadı" gibi bir hata mesajı gösterilir.
+
+Gerekli Özellikler:
+
+Kayıtsız kullanıcılar için uygun hata mesajı (örneğin, "Kullanıcı bulunamadı" veya "Yanlış e-posta/şifre").
+
+Sistemdeki kullanıcılar veritabanı üzerinden kontrol edilir.
+
+4. Kitap Ekleme (Add Book)
+Açıklama: Sisteme yeni bir kitap eklemek isteyen kullanıcı, kitap adı, yazar, açıklama gibi bilgileri girer. Kitap, veritabanına kaydedilir.
+
+Gerekli Özellikler:
+
+Kullanıcılar sadece kendi ekledikleri kitapları ekleyebilir.
+
+Kitap bilgileri (ad, yazar, açıklama, kategori, vb.) zorunlu alanlar.
+
+Kitap ekleme işlemi başarılı olduğunda, kullanıcıya onay mesajı gösterilir.
+
+5. Kitap Silme (Delete Book)
+Açıklama: Kullanıcılar sadece kendi ekledikleri kitapları silebilir. Diğer kullanıcıların kitaplarına müdahale edemezler.
+
+Gerekli Özellikler:
+
+Kitap, yalnızca kitap sahibinin izni ile silinebilir.
+
+Kitap silme işlemi sonrası kullanıcıya onay mesajı gösterilir.
+
+Kitap silme işlemi için uygun API endpoint'leri sağlanır.
+
+6. Kitap Güncelleme (Update Book)
+Açıklama: Kullanıcılar sadece kendi ekledikleri kitapları güncelleyebilir. Kitap adı, yazar, açıklama gibi bilgiler güncellenebilir.
+
+Gerekli Özellikler:
+
+Güncelleme işlemi sadece kitabın sahibi tarafından yapılabilir.
+
+Kitap bilgileri (ad, yazar, açıklama, kategori) güncellenebilir.
+
+Kitap güncellenmesi sonrası kullanıcıya onay mesajı gösterilir.
+
+7. Kitap Listeleme (List Books)
+Açıklama: Sistemdeki tüm kitaplar, kullanıcılar tarafından listelenebilir.
+
+Gerekli Özellikler:
+
+Kullanıcılar, tüm kitapları görebilir ancak sadece kendi kitaplarını düzenleyebilir.
+
+Listeleme filtreleme ve sıralama seçenekleri (örneğin, kitap ismine göre arama).
+
+Kullanıcıya her kitap için ayrıntılı bilgi sağlanabilir (yazar, açıklama, kategori, ekleyen kullanıcı vb.).
+
+8. Kitap Arama (Search Books)
+Açıklama: Kullanıcılar, kitapları başlık, yazar veya kategori gibi filtrelerle arayabilirler.
+
+Gerekli Özellikler:
+
+Arama kriterlerine göre kitaplar filtrelenebilir (örneğin, kitap adı, yazar adı).
+
+Kullanıcılar arama sonuçlarını sıralayabilir ve filtreleyebilir.
+
+Arama sonuçları hızlı ve etkili bir şekilde döndürülür.
 
  
