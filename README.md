@@ -1,10 +1,13 @@
 # 📚 BookManagement -
 # Book Management !
 
-**BookManagement**, Kullanıcı Kaydı ile ile birlikte, Kullanıcıların Giriş Yapabildiği Kaydı Olmayan Kullanıcılarda 
-Hata Mesajı Dönderen, Kitap Ekleme,Silme,Güncelleme,Listeleme yapabildiğimiz,
-Kullanıcıların sadece kendi ekledikleri Kitaplar üzerinden işlemler Silme Güncelleme yapabildiği Arama ve Listeleme
-Tüm Kullanıcıların erişim sağladığı Kitap Uygulaması.
+KULLANICILAR SİSTEME KAYIT OLABİLİR VE GİRİŞ YAPABİLİR.
+KAYITLI OLMAYAN KULLANICILAR GİRİŞ YAPMAYA ÇALIŞTIĞINDA HATA MESAJI ALIR.
+GİRİŞ YAPAN KULLANICILAR YENİ KİTAP EKLEYEBİLİR.
+KULLANICILAR SADECE KENDİ EKLEDİKLERİ KİTAPLARI GÜNCELLEYEBİLİR VE SİLEBİLİR.
+SİSTEMDEKİ TÜM KİTAPLAR TÜM KULLANICILAR TARAFINDAN LİSTELENEBİLİR VE GÖRÜNTÜLENEBİLİR.
+KULLANICILAR, KİTAP ADI, YAZAR VB. KRİTERLERE GÖRE KİTAPLARI ARAYABİLİR.
+GÜVENLİK AMAÇLI YETKİLENDİRME VE TOKEN TABANLI ERİŞİM KONTROLÜ SAĞLANMIŞTIR.
 
 ## 🚀 Özellikler
 
