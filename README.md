@@ -15,12 +15,12 @@ Tüm Kullanıcıların erişim sağladığı Kitap Uygulaması.
 - 🧑‍💻​🗝️ Kullanıcıların Kayıtla birikte işlem gerçekleştirir.
 
 ## 🛠️ Kullanılan Teknolojiler
-- **Spring Boot**
-- **Spring Data JPA (H2 veritabanı ile)**
-- **Security (Session Tabanlı)**
-- **Validaitons**
-- **Maven**
-- **Postman**
+- ** 🍃Spring Boot**
+- ** ☘️Spring Data JPA (H2 veritabanı ile)**
+- ** 👮🔑Security (Session Tabanlı)**
+- ** ✅Validaitons**
+- ** Ⓜ️Maven**
+- ** 📬Postman**
 - # Jpa-Query-Methodlar
 
 | SPRİNG | Kullanıcı Kayıt Ekranı Kayıtsız Kullanıcılarda Alınan Hata |
