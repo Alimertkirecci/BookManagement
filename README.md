@@ -23,13 +23,9 @@ Tüm Kullanıcıların erişim sağladığı Kitap Uygulaması.
 - ** 📬Postman**
 - # Jpa-Query-Methodlar
 
- | ⚠️ | KAYITSIZ GİRİŞ HATASI  |
+ | ⚠️ | Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları  |
 | ------------ | ------------ |
-| HATA  | Giriş yapılmadan kitap eklenilicek olursa uygulamanın vericeği hata !  |
- 
-Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları
-1. Kullanıcı Kaydı (User Registration)
-Açıklama: Kullanıcılar sisteme kaydolmak için gerekli bilgileri (ad, soyad, e-posta, şifre) girer. Şifreler güvenli bir şekilde saklanır (örn. bcrypt ile şifreleme).
+| 1. Kullanıcı Kaydı (User Registration)  | Açıklama: Kullanıcılar sisteme kaydolmak için gerekli bilgileri (ad, soyad, e-posta, şifre) girer. Şifreler güvenli bir şekilde saklanır (örn. bcrypt ile şifreleme).
 
 Gerekli Özellikler:
 
@@ -41,8 +37,11 @@ E-posta doğrulama işlemi (opsiyonel).
 
 E-posta adresi ve kullanıcı adı gibi bilgilerin benzersiz olması sağlanır.
 
-Kayıt başarılı olduktan sonra kullanıcıya hoş geldiniz mesajı gösterilir.
+Kayıt başarılı olduktan sonra kullanıcıya hoş geldiniz mesajı gösterilir.  |
+ 
+Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları
 
+ 
 2. Kullanıcı Girişi (User Login)
 Açıklama: Kullanıcılar sisteme giriş yapmak için e-posta ve şifrelerini kullanır. Giriş başarılı olursa, kullanıcıya bir erişim token'ı (JWT - JSON Web Token) verilir.
 
