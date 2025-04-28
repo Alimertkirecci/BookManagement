@@ -141,6 +141,10 @@ Arama sonuçları hızlı ve etkili bir şekilde döndürülür.|
 <img src="https://github.com/Alimertkirecci/BookManagement/blob/main/BookManagementDevelop/ManagementBoookPng/KitapListelemeEkran%C4%B1.png" width="400 style="display: inline-block; margin-right: 10px;"/>
  <img src=" https://github.com/Alimertkirecci/BookManagement/blob/main/BookManagementDevelop/ManagementBoookPng/UpdateHatas%C4%B1.png" width="400  style="display: inline-block;"/>
 </p>
+<p align="center">
+<img src=" https://github.com/Alimertkirecci/BookManagement/blob/main/BookManagementDevelop/ManagementBoookPng/Kullan%C4%B1c%C4%B1%20Giris%20Ekran%C4%B1.png" width="400 style="display: inline-block; margin-right: 10px;"/>
+ <img src="  https://github.com/Alimertkirecci/BookManagement/blob/main/BookManagementDevelop/ManagementBoookPng/KitapSilme.png" width="400  style="display: inline-block;"/>
+</p>
  
 
 
