@@ -39,6 +39,7 @@ E-posta adresi ve kullanıcı adı gibi bilgilerin benzersiz olması sağlanır.
 
 Kayıt başarılı olduktan sonra kullanıcıya hoş geldiniz mesajı gösterilir.  |
 
+ | ⚠️ | Kitap Yönetim Sistemi (BookManagement) - GitHub Proje Detayları  |
 | ------------ | ------------ |
 |2. Kullanıcı Girişi (User Login) |Açıklama: Kullanıcılar sisteme giriş yapmak için e-posta ve şifrelerini kullanır. Giriş başarılı olursa, kullanıcıya bir erişim token'ı (JWT - JSON Web Token) verilir.
 
