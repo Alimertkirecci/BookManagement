@@ -8,11 +8,11 @@ Tüm Kullanıcıların erişim sağladığı Kitap Uygulaması.
 
 ## 🚀 Özellikler
 
-- 🔐 Kullanıcı Kayıt ve Giriş Sistemi (Session tabanlı)
-- 📘 Kitap Ekleme, Silme
-- 🔍 Başlığa Göre Kitap Arama
-- 📄 Sayfalama (pagination) desteği
-- 🧑‍💻 Sadece giriş yapan kullanıcıya özel veriler
+- 🔐​🗝️ Kullanıcı Kayıt ve Giriş Sistemi (Session tabanlı)
+- 📘➕​➖​💱​Kitap Ekleme, Silme,Güncelleme
+- 🎩​🔍 Başlığa Göre Kitap Arama
+- 📚​📖 Sayfalama (Pageble) desteği
+- 🧑‍💻​🗝️ Kullanıcıların Kayıtla birikte işlem gerçekleştirir.
 
 ## 🛠️ Kullanılan Teknolojiler
 - **Spring Boot**
